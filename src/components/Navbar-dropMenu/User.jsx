@@ -11,7 +11,7 @@ function User() {
             { Menus.map((menu)=> (
                  <li className='mb-2 font-light hover:text-orange-600 cursor-pointer' key={menu}>
                    <Link to=''>
-                   {menu}
+                       {menu}
                   </Link>
                 </li>
             ))}

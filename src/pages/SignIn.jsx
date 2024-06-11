@@ -3,7 +3,7 @@ import { FaHome } from 'react-icons/fa'
 import { RxCaretRight } from "react-icons/rx";
 import { Link } from 'react-router-dom';
 
-function Login() {
+function SignIn() {
 
     const [formMail, setformMail] = useState({
         name: "",
@@ -113,4 +113,4 @@ function Login() {
     )
 }
 
-export default Login
+export default SignIn

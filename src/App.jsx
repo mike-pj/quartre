@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Home from './pages/Home'
-import Login from './pages/Login'
+import SignIn from './pages/SignIn'
 import Register from './pages/Register'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -14,7 +14,7 @@ export const App = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Login' element={<Login />} />
+        <Route path='/Login' element={<SignIn />} />
         <Route path='/Register' element={<Register />} />
       </Routes>
       <Footer />
