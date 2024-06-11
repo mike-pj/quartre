@@ -3,6 +3,7 @@ import { FaFacebook, FaGlobe, FaInstagram, FaLocationArrow, FaMailBulk, FaSearch
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
 import { FaCartShopping } from 'react-icons/fa6';
+import Menus from './Navbar-dropMenu/User'
 
 function Navbar() {
   return (
@@ -50,8 +51,17 @@ function Navbar() {
             </div>
             <div className="flex items-center gap-4">
                 <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'><FaSearch /></button>
-                <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'><FaUser /></button>
-                <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'><FaCartShopping /></button>
+                <div className='relative group'>
+                    <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
+                        <FaUser />
+                    </button>
+                    <div className='absolute top-[50px] bg-white w-[150px] shadow-lg -left-[100px] py-4 px-4 hidden group-hover:block'>
+                        <Menus />
+                    </div>
+                </div>
+                <button className='bg-white h-[50px] w-[50px] shadow-2xl flex items-center justify-center hover:bg-orange-500 hover:text-white'>
+                    <FaCartShopping />
+                </button>
             </div>
         </nav>
     </header>
